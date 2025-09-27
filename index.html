@@ -123,9 +123,9 @@
                     IT Specialist(Java)
                   </h4>
                   <p>
-                    I'm a motivated and results-driven Information Technology graduate from South Africa, passionate about software development and network administration. I hold a Diploma in IT from Vaal University of Technology, majoring in Software Development & Networking, and am currently pursuing an Advanced Diploma in Information Technology.
-
-I thrive on building real-world solutions, learning new technologies, and contributing to impactful projects. My experience spans web development, system design, and network configuration, with a strong foundation in Java, Visual Basic, SQL, HTML5, and CSS.
+                    I'm a motivated and results-driven Information Technology graduate from South Africa, passionate about software development and network administration. I hold a Diploma in IT from [...]
+  
+I thrive on building real-world solutions, learning new technologies, and contributing to impactful projects. My experience spans web development, system design, and network configuration, with a stro[...]
                   </p>
                   </p>
                 </div>
@@ -309,18 +309,21 @@ I thrive on building real-world solutions, learning new technologies, and contri
           <div id="portfolio">
             <section class="clearfix">
               <div class="project-section">
+                <!-- Project 1: dyict-register -->
                 <div class="project-container">
-                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper').style.display='block'">
-                    <img src="./images/floor.jpg" alt="project image">
+                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper1').style.display='block'">
+                    <img src="./images/floor.jpg" alt="Attendance Register System">
                   </div>
-                  <p class="project-title">Project Title</p>
+                  <p class="project-title">Attendance Register System</p>
                 </div>
+                <!-- Project 2: University AI Chatbot -->
                 <div class="project-container">
-                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper').style.display='block'">
-                    <img src="./images/floor.jpg" alt="project image">
+                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper2').style.display='block'">
+                    <img src="./images/floor.jpg" alt="University AI Chatbot">
                   </div>
-                  <p class="project-title">Project Title</p>
+                  <p class="project-title">University AI Chatbot</p>
                 </div>
+                <!-- Existing placeholders (unchanged) -->
                 <div class="project-container">
                   <div class="project-img-container" onclick="document.getElementById('modal-wrapper').style.display='block'">
                     <img src="./images/floor.jpg" alt="project image">
@@ -364,16 +367,49 @@ I thrive on building real-world solutions, learning new technologies, and contri
                   <p class="project-title">Project Title</p>
                 </div>
               </div>
-              <div id="modal-wrapper" class="modal">
 
+              <!-- Modal for Project 1 -->
+              <div id="modal-wrapper1" class="modal">
                 <form class="modal-content animate">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('modal-wrapper1').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                    <img src="images/floor.jpg" alt="Attendance Register System" class="avatar">
+                    <h1 class="project_details" style="text-align:center">Attendance Register System</h1>
+                  </div>
+                  <div class="container">
+                    <input type="text" value="Attendance Register System" name="uname" readonly>
+                    <textarea class="project_description" rows="3" readonly>Attendance Register System - Java to Web</textarea>
+                    <input type="url" value="https://github.com/RofhiwaCodeOG/dyict-register" readonly>
+                    <input type="text" value="HTML" readonly>
+                  </div>
+                </form>
+              </div>
 
+              <!-- Modal for Project 2 -->
+              <div id="modal-wrapper2" class="modal">
+                <form class="modal-content animate">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('modal-wrapper2').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                    <img src="images/floor.jpg" alt="University AI Chatbot" class="avatar">
+                    <h1 class="project_details" style="text-align:center">University AI Chatbot</h1>
+                  </div>
+                  <div class="container">
+                    <input type="text" value="University AI Chatbot" name="uname" readonly>
+                    <textarea class="project_description" rows="3" readonly>AI Chatbot for University (add description if needed)</textarea>
+                    <input type="url" value="https://github.com/PfanoR/Universty-AI-Chatbot" readonly>
+                    <input type="text" value="Python, Java, CSS, HTML" readonly>
+                  </div>
+                </form>
+              </div>
+
+              <!-- Existing modal (unchanged) -->
+              <div id="modal-wrapper" class="modal">
+                <form class="modal-content animate">
                   <div class="imgcontainer">
                     <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
                     <img src="images/floor.jpg" alt="project" class="avatar">
                     <h1 class="project_details" style="text-align:center">Project Details</h1>
                   </div>
-
                   <div class="container">
                     <input type="text" placeholder="Project Name" name="uname" readonly>
                     <textarea class="project_description" rows="3" placeholder="Project Description" readonly></textarea>
@@ -381,9 +417,7 @@ I thrive on building real-world solutions, learning new technologies, and contri
                     <input type="text" placeholder="Languages used" readonly>
                     <button class="project_submit" type="submit">Submit</button>
                   </div>
-
                 </form>
-
               </div>
             </section>
           </div>
@@ -447,5 +481,3 @@ I thrive on building real-world solutions, learning new technologies, and contri
 </body>
 
 </html>
-
-
